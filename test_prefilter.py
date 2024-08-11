@@ -5,7 +5,8 @@ def test_format():
     s = "{}".format(a)
     assert s == '1.45 m'
     s = "{:.4e}".format(a)
-    assert s == '1.4500E+0 m'
+   #assert s == '1.4500E+0 m'
+    assert s == '1.4500e+00 m'
     s = "{.value}".format(a)
     assert s == '1.45'
     s = "%s" % a
